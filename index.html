@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../doc.css/style.css" />
+    <base href="/">
+    <title>Boulder Dash Game</title>
+</head>
+<body>
+    <div id="one">
+        <div id="Menu">
+            <button id="start game">start game</button>
+            <button id="rest">rest</button>
+            <button id="reset">reset</button>
+
+            <select  id="levels">
+                <optgroup>
+                    <option value="1" id="lv01">Level 1</option>
+                    <option value="2" id="lv02">Level 2</option>
+                    <option value="3" id="lv03">Level 3</option> 
+                </optgroup>
+            </select>
+            <div>
+
+                <div class="scorebord">
+                            <img class="coin"  src="./../textures/coin.gif" />
+                </div>
+
+                <div id="scorebord2">
+                    <div class="player">Player 1</div>
+                    <div id="life"></div>
+                    <div>MEN</div>
+                </div>
+            </div>
+        </div>
+        <div id="game">
+            <div id="bricks" draggable="false"> </div>
+        </div>
+        <div id="admin">
+            <button id="start"> start</button>
+            <input type="text"  id="height_bord" />
+            <input type="text"  id="width_bord" />
+            <select  id="objects">
+                <optgroup label="opponent">
+                    <option>butterfly</option>
+                    <option>biomass</option>
+                </optgroup>
+                <optgroup label="ground">
+                    <option>sand</option>
+                    <option>rock</option>
+                    <option>diamond</option>
+                    <option>wall</option>
+                    <option>clear</option>
+                    <option>rockford</option> 
+                    <option>teleport</option>
+                    <option>magic_cobble</option>       
+                </optgroup>
+            </select>
+
+            <button id="save">save</button>
+            <textarea type="text" id="level"></textarea>
+            <input type="checkbox" id="admin_tools" />
+            
+        </div>
+    </div>
+    <div id="dunked_on">GAME OVER</div>
+    <div class="help">
+        <p>
+            Mouvements: Use the keys z,q,s,d  to go up, go left, go down and go right. 
+            Collect all the diamonds on the pitch.
+        </p> 
+    </div>
+
+    <script src="./../run.js"></script>
+</body>
+</html> 
+
