@@ -1,0 +1,65 @@
+
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url("/font/Minecraft.ttf") format("truetype");
+}
+
+body {
+    background-image: url(/textures/menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    margin: 0;
+}
+
+h1 {
+    color : #FEA141;
+    font-size: 2vw;
+    letter-spacing: .05em;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: -4.5vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.menu > *{
+    font-family:'Minecraft';
+}
+
+.bnt-bd {
+    background: #727272;
+    color: rgb(247, 247, 247);
+    width: 100%;
+    padding: .5rem 0;
+    margin-bottom: .6rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+    font-size: 1.2vw;
+    letter-spacing: .025em;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5),
+               inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-bd:hover {
+    color: rgb(246, 246, 44);
+}

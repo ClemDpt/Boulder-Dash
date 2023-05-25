@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../doc.css/style_optionslevel.css" />
+    <base href="/">
+    <title>Boulder Dash Game</title>
+</head>
+<body>
+    <div class="menu">
+        <h1>Options</h1>
+        <label for="iptfile" class="label-file">Import</label>
+        <input type="file" class="input-file" id="iptfile"></input>
+        <button class="bnt-bd bnt-optionslevel" id="bntdlt">Delete</button>
+        <div class="subbox">
+            <input type="checkbox" class="box hidden" id="niveau1" checked></input>
+            <label for="niveau1" class="box hidden"> Niveau 1</label>
+            <input type="checkbox" id="niveau2" class="box hidden" checked>
+            <label for="niveau2" class="box hidden"> Niveau 2</label>
+            <input type="checkbox" id="niveau3" class="box hidden" checked>
+            <label for="niveau3" class="box hidden"> Niveau 3</label>
+            <input type="submit" class="hidden" id="boxSub" value="Submit"></input>
+        </div>
+        <button class="bnt-bd bnt-optionslevel" id="bntorg">Organise</button>
+        <div class="subtxt">
+            <input type="text" class="hidden" id="orgfile" placeholder="ex : [1,3,2]"></input>
+            <input type="submit" class="hidden" id="subtxt" value="Submit"></input>
+        </div>
+        <button class="bnt-bd" id="rtn" onclick="window.location='selectLevel.html'">Return</button>
+    </div>
+    <script src="./../js/optionsLevel.js"></script>
+</body>
+</html> 
+

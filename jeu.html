@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../doc.css/style_jeu.css" />
+    <base href="/">
+    <title>Boulder Dash Game</title>
+</head>
+<body>
+    <div class="one">
+        <div id="endScreen"></div>
+        <div class="scoreboard">
+            <p id="coinMap">0</p>
+            <img src="./../textures/diamond.png" id="imgcoin"/>
+            <p style="display:inline; color:#2CCDB1;" id="coin_score">0</p>
+            <!--<p id="moveCount_score">0</p> -->
+            <p id="timer">Timer : 000</p>
+            <p id="globalScore">Score : 0</p>
+            <img src="./../textures/heart.png" id="imgcoin"/>
+            <p style="display:inline; color:#FF1313;" id="life">3</p>
+        </div>
+
+        <div id="game">
+            <div id="bricks" draggable="false"></div>
+        </div>
+        <div class="buttons-bd">
+            
+            <button class="bnt-bd" id="pause">Pause</button>
+            <button class="bnt-bd" id="restart">Restart</button>
+            <button class="bnt-bd" id="quit">Quit</button>
+        </div>
+        <img src="./../textures/void_hq.png" id="paused" class ="hidden"/>
+        <p class="hidden" id="txtPause">Paused</p>
+    </div>
+    <div id="dunked_on">GAME OVER</div>
+    
+    
+    <script src="./../js/afficher.js"></script>
+    
+</body>
+</html> 
+
